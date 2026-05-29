@@ -35,19 +35,3 @@ python speech_translation_experiment.py --dataset fra --algorithm improved --sam
 ```powershell
 python speech_translation_experiment.py --dataset fra --algorithm original --samples 20000 --epochs 50
 ```
-
-快速测试可把 `--samples` 改成 `1000`，把 `--epochs` 改成 `2`。训练指标和示例翻译会直接打印在终端。
-
-## 3. 参数说明
-
-- `--dataset`：选择 `cmn` 英中或 `fra` 英法。
-- `--algorithm`：选择 `original` 原算法或 `improved` 优化算法。
-- `--samples`：使用多少条句对。
-- `--epochs`：训练轮数。
-- `--latent-dim`：LSTM 隐状态维度。
-- `--embedding-dim`：优化算法使用的字符嵌入维度。
-- `--show-summary`：打印模型结构。
-
-## 4. 实验报告
-
-报告已写在 `report.md`，本次短实验使用 1000 条样本、8 轮训练。若要让翻译质量更明显，可以把 `--samples` 提高到 `10000`，把 `--epochs` 提高到 `30` 或更多。
